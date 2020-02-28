@@ -1,0 +1,30 @@
+{
+  "id": "1656714",
+  "name": "web",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "737969",
+      "name": "箭头",
+      "font_class": "jiantou-r",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "13181600",
+      "name": "箭头",
+      "font_class": "jiantou-l",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "1239930",
+      "name": "加载",
+      "font_class": "jiazai",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    }
+  ]
+}

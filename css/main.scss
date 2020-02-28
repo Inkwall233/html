@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import 'sassConfig';
+//幻灯片 
+#slide-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.slide-content {
+    position: relative;
+    left: 0;
+    @include webkit(transition, all 1s ease-in 0s);
+    
+    li {
+        float: left;
+    }
+}
+
+.slide-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+    font-size: 0;
+
+    a {
+        display: inline-block;
+        width: 8px;
+        height: 3px;
+        margin: 0 3px;
+        background-color: white;
+        opacity: .5;
+
+        &.current {
+            opacity: 1;
+        }
+    }
+}
+
+.slide-prev, .slide-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer; 
+
+    .iconfont {
+        font-size: 24px;;
+    }
+}
+.slide-prev {left: 20px;}
+.slide-next {right: 20px; }
+//口腔图文部分
+.info-list {
+    padding: 0 45px;
+    figure {
+        float: right;
+        width: 33.33333%;
+        padding: 0 25px;
+        @include webkit(box-sizing, border-box);
+    }
+    img {width: 100%;}
+
+    figcaption {
+        font-size: 18px;
+        padding: 24px 0 10px;
+        margin-bottom: 11px;
+        border-bottom: 1px solid #d9d9d9;
+        color: $text-main;
+    }
+    p {
+        line-height: 22px;
+        color: $text-gray;
+    } 
+}
+.more-link {
+    display: block;
+    width: 108px;
+    height: 35px;
+    margin: 55px auto 90px;
+    line-height: 35px;
+    color: $text-gray;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    border-radius: 100px;
+    @include webkit(transition, all .5s ease 0s);
+    &:hover {
+        background-color: $color-main;
+        color: #fff;
+        border-color: $color-main;
+    }
+}
+//公益图文部分
+.welfare {
+    header {
+        background-color: #efefef;
+    }
+}
+.welfare-wrap {
+    .row {
+        float: left;
+        width: 33.3333%;
+    }
+    .content-big{ height: 380px;    background-color: blue; }
+    .content-small{ height: 190px;    background-color:  #b44a4a;}
+}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+//主色
+$color-main: #01aab6;
+//辅色
+$color-second: #b45d01;
+//文字主色
+$text-main: #010101;
+//文字辅色
+$text-gray: #a0a0a0;
+//主题宽度
+$container: 1200px;
+
+//定义浏览器内核属性
+@mixin webkit($style,$value){
+    -webkit-#{$style}:$value;
+    -moz-#{$style}: $value;
+    -ms-#{$style}: $value;
+    -o-#{$style}: $value;
+    #{$style}: $value;
+}

@@ -1,0 +1,107 @@
+#slide-wrap {
+  position: relative;
+  overflow: hidden; }
+
+.slide-content {
+  position: relative;
+  left: 0;
+  -webkit-transition: all 1s ease-in 0s;
+  -moz-transition: all 1s ease-in 0s;
+  -ms-transition: all 1s ease-in 0s;
+  -o-transition: all 1s ease-in 0s;
+  transition: all 1s ease-in 0s; }
+  .slide-content li {
+    float: left; }
+
+.slide-nav {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  text-align: center;
+  font-size: 0; }
+  .slide-nav a {
+    display: inline-block;
+    width: 8px;
+    height: 3px;
+    margin: 0 3px;
+    background-color: white;
+    opacity: .5; }
+    .slide-nav a.current {
+      opacity: 1; }
+
+.slide-prev, .slide-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer; }
+  .slide-prev .iconfont, .slide-next .iconfont {
+    font-size: 24px; }
+
+.slide-prev {
+  left: 20px; }
+
+.slide-next {
+  right: 20px; }
+
+.info-list {
+  padding: 0 45px; }
+  .info-list figure {
+    float: right;
+    width: 33.33333%;
+    padding: 0 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+  .info-list img {
+    width: 100%; }
+  .info-list figcaption {
+    font-size: 18px;
+    padding: 24px 0 10px;
+    margin-bottom: 11px;
+    border-bottom: 1px solid #d9d9d9;
+    color: #010101; }
+  .info-list p {
+    line-height: 22px;
+    color: #a0a0a0; }
+
+.more-link {
+  display: block;
+  width: 108px;
+  height: 35px;
+  margin: 55px auto 90px;
+  line-height: 35px;
+  color: #a0a0a0;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 100px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; }
+  .more-link:hover {
+    background-color: #01aab6;
+    color: #fff;
+    border-color: #01aab6; }
+
+.welfare header {
+  background-color: #efefef; }
+
+.welfare-wrap .row {
+  float: left;
+  width: 33.3333%; }
+.welfare-wrap .content-big {
+  height: 380px;
+  background-color: blue; }
+.welfare-wrap .content-small {
+  height: 190px;
+  background-color: #b44a4a; }
